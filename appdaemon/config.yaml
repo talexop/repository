@@ -13,9 +13,12 @@ init: false
 homeassistant_api: true
 uart: true
 ports:
-  5050/tcp: 5050
+- 5050/tcp: 5050
+- 8081/tcp: 8081
+- 8080/tcp: 8080
 ports_description:
-  5050/tcp: AppDaemon
+- 5050/tcp: AppDaemon
+- 8080/tcp: EfergyHubServer
 map:
 - addon_config:rw
 - homeassistant_config:rw
